@@ -1,0 +1,115 @@
+:root {
+  --header-height: 64px;
+}
+
+@font-face {
+  font-family: "pirulen-rg";
+  src: url("./pirulen-rg.ttf");
+}
+
+html body {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer,
+main {
+  width: 100vw;
+}
+
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  background-position: center;
+  font-family: "pirulen-rg";
+  height: var(--header-height);
+  padding: 8px 24px;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+main {
+  padding-top: var(--header-height);
+}
+
+footer {
+  background-color: #000000;
+  background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+  text-align: center;
+  color: #fff;
+  padding: 24px;
+}
+
+header a {
+  color: #fff;
+  text-decoration: inherit; /* no underline */
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+footer a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
+}
+
+footer a > img {
+  width: 24px;
+  padding: 4px;
+  opacity: 0.8;
+}
+
+footer a > img:hover {
+  opacity: 1;
+}
+
+.title-container {
+  flex-direction: column;
+  display: flex;
+  width: 54px;
+}
+
+.title-container .firstName {
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #fff;
+}
+
+.title-container .lastName {
+  font-size: 12px;
+  letter-spacing: 2px;
+  color: #f09b00;
+}
+
+.swiper-slide img {
+  width: 100vw;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  float: left;
+  padding: 12px;
+  font-size: 12px;
+}
+
+h2 {
+  font-family: "pirulen-rg";
+  text-align: center;
+}
+
+p {
+  text-align: justify;
+  padding: 24px;
+  font-family: sans-serif;
+  line-height: 1.4;
+}
